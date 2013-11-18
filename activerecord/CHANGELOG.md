@@ -1,5 +1,23 @@
+*   Checks to see if the record contains the foreign key to set the inverse automatically.
+
+    *Edo Balvers*
+
+*   Prevent the counter cache from being decremented twice when destroying
+    a record on a has_many :through association.
+
+    Fixes #11079.
+
+    *Dmitry Dedov*
+
+*   Fix bug where has_one associaton record update result in crash, when replaced with itself.
+
+    Fixes #12834.
+
+    *Denis Redozubov*, *Sergio Cambra*
+
 *   Fix uninitialized constant TransactionState error when Marshall.load is used on an Active Record result.
-    Fixes #12790
+
+    Fixes #12790.
 
     *Jason Ayre*
 
@@ -23,7 +41,7 @@
         vendor.users.to_a # => No exception is raised
 
 
-    Fixes: #12242, #9517, #10240
+    Fixes #12242, #9517, #10240.
 
     *Paul Nikitochkin*
 
